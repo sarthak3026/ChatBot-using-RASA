@@ -1,0 +1,46 @@
+slots:
+	book_room:
+		type:text
+	number_of_rooms:
+		type:text
+	faqs:
+		type:text
+	room_service:
+		type:text
+
+intents:
+	-greet
+	-goodbye
+	-book_room
+	-number_of_rooms
+	-deny
+	-Acknowledgement	
+
+entities:
+	-number_of_rooms
+	-book
+
+templates:
+	utter_greet:
+		-"Hello, how can I help you?"
+	utter_goodbye:
+		-"See you again :)"
+	utter_book_room:
+		-"Which type of rooms?"
+	utter_deny:
+		-"Sorry service not available at the moment."
+		-"What happened, any problem?"
+	utter_Acknowledgement:
+		-"your welcome"
+	utter_number_of_rooms:
+		-"How many rooms you would like to book?"
+	
+
+actions:
+	-utter_greet
+	-utter_goodbye
+	-utter_book_room
+	-utter_number_of_rooms
+	-utter_deny
+	-utter_Acknowledgement
+	

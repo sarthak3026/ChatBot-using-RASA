@@ -1,0 +1,67 @@
+{
+  "rasa_nlu_data": {
+    "data": [
+      {
+        "text": "hello",
+        "intent": "greet",
+        "entities": []
+      }
+    ],
+    "common_examples": [
+      {
+        "text": "Hello, How can i help you?",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "Welcome",
+        "intent": "Acknowledgement",
+        "entities": []
+      },
+      {
+        "text": "I want to book rooms",
+        "intent": "book_room",
+        "entities": [
+          {
+            "start": 15,
+            "end": 19,
+            "value": "room",
+            "entity": "book"
+          }
+        ]
+      },
+      {
+        "text": "Thank you",
+        "intent": "Acknowledgement",
+        "entities": []
+      },
+      {
+        "text": "2 rooms",
+        "intent": "book_room",
+        "entities": [
+          {
+            "start": 2,
+            "end": 7,
+            "value": "rooms",
+            "entity": "number_of_rooms"
+          }
+        ]
+      },
+      {
+        "text": "no",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "Thank you",
+        "intent": "Acknowledgement",
+        "entities": []
+      }
+    ]
+  }
+}
